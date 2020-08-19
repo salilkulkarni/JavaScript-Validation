@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enter The OTP</title>
+  <link href="style.css" rel="stylesheet"> 
+</head>
+<body>
+<div class="otp_div">
+<p>
+  Dear <b><span id ='result'></span></b>,
+  <script>
+    document.getElementById("result").innerHTML=localStorage.getItem('textvalue');
+  </script>
+  <br>
+  Thank you for your enquiry.<br>
+  A 4 digit verification number has been sent to your phone number:<b><span id='result2'></span></b>, 
+  <script>
+    document.getElementById("result2").innerHTML=localStorage.getItem('numbb');
+  </script>
+  <br>
+  please enter in the following box and submit for confirmation:
+  <br>
+</p>
+</div>
+  <form>
+  The OTP generated is:
+  <br>
+  <input type='text' id ='o'>
+  <script>
+    document.getElementById('o').value = localStorage.getItem('onetp');
+  </script>
+  <br>
+  <label for="user_otp">Enter the OTP:</label>
+  <br>
+  <input type="text" id="user_otp">
+  <br>
+  <input type="hidden" id="attempt" value="3">
+  <input type='button' id='sub'value="Submit" onclick="check()">
+  <script type="text/javascript" src="otp_validaton.js"> </script>
+</form>
+
+</body>
+</html>

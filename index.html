@@ -1,0 +1,42 @@
+<html>
+   <head>
+      <script type = "text/javascript" src="full_validation.js"></script>
+      <link href="style.css" rel="stylesheet"> 
+
+   </head>
+   <body>
+    <h1>ENQUIRY   FORM</h1>
+     <form id="myform">
+      
+
+        <label for="name"><b>Name:</b></label>
+        <br>
+        <input type="text" placeholder="Enter Name" name="name">
+        <br>
+        <label for="email"><b>Email:</b></label>
+        <br>
+        <input type="email" placeholder="Enter the Email" name="email" required >
+        <br>
+        
+        <label for = 'no'><b>Mobile Number:</b></label>
+        <br>
+        <input type='text'placeholder="Enter Mobile Number" name='no' id ='no' oninput="myfunction()" >
+        <br>
+        <img id='imgid' src='images/call1.jpg' style="width:40px;height: 30px;">
+        <br>
+        <p id='txt2'></p>
+        <script type="text/javascript" src = "masked.js"></script>
+
+
+<script type="text/javascript" src="mobile_number.js"></script> 
+       
+        
+    <br><br>
+    <input type="button" onclick="sayHello()" value="Submit">
+    
+    </form>
+
+   
+      
+   </body>
+</html>
