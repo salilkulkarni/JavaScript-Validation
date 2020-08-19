@@ -88,7 +88,7 @@
             //var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
             //var phoneno = /^\d{10}$/;
             ///^\d{10}$/.test(numb) 
-            if(three <=621 || three ==800 )
+            if(three <=621 || three ==800 || three =="" || numb=="" || numb=="()--")
                   return 'error in number     ';
             return "";
        
